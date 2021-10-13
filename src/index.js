@@ -7,4 +7,4 @@ export { default as version } from './version.js';
 export { default as validate } from './validate.js';
 export { default as stringify } from './stringify.js';
 export { default as parse } from './parse.js';
-export * from './xbs-utils';
+export { default as UuidUtils } from './xbs-utils.js';

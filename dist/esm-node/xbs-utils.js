@@ -16,8 +16,9 @@ class UuidUtils {
   }
 
   static arrayOfObjectsBinsToUuids(arrayWithBins) {
-    return arrayWithBins.map((objWithBins) => UuidUtils.objectBinsToUuids(objWithBins));
+    return arrayWithBins.map(objWithBins => UuidUtils.objectBinsToUuids(objWithBins));
   }
+
 }
 
-module.exports = UuidUtils;
+export default UuidUtils;

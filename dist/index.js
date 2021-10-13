@@ -3,17 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var _exportNames = {
-  v1: true,
-  v3: true,
-  v4: true,
-  v5: true,
-  NIL: true,
-  version: true,
-  validate: true,
-  stringify: true,
-  parse: true
-};
 Object.defineProperty(exports, "v1", {
   enumerable: true,
   get: function () {
@@ -68,6 +57,12 @@ Object.defineProperty(exports, "parse", {
     return _parse.default;
   }
 });
+Object.defineProperty(exports, "UuidUtils", {
+  enumerable: true,
+  get: function () {
+    return _xbsUtils.default;
+  }
+});
 
 var _v = _interopRequireDefault(require("./v1.js"));
 
@@ -87,17 +82,6 @@ var _stringify = _interopRequireDefault(require("./stringify.js"));
 
 var _parse = _interopRequireDefault(require("./parse.js"));
 
-var _xbsUtils = require("./xbs-utils");
-
-Object.keys(_xbsUtils).forEach(function (key) {
-  if (key === "default" || key === "__esModule") return;
-  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
-  Object.defineProperty(exports, key, {
-    enumerable: true,
-    get: function () {
-      return _xbsUtils[key];
-    }
-  });
-});
+var _xbsUtils = _interopRequireDefault(require("./xbs-utils.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }

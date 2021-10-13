@@ -27,4 +27,5 @@ export default [
   chunk('validate', 'uuidValidate'),
   chunk('parse', 'uuidParse'),
   chunk('stringify', 'uuidStringify'),
+  chunk('xbs-utils', 'UuidUtils'),
 ];

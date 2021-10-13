@@ -20,4 +20,4 @@ class UuidUtils {
   }
 }
 
-module.exports = UuidUtils;
+export default UuidUtils;
