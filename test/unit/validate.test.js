@@ -1,6 +1,7 @@
 import assert from 'assert';
 import validate from '../../src/validate.js';
 import NIL from '../../src/nil.js';
+import parse from '../../src/parse.js';
 
 describe('validate', () => {
   test('validate uuid', () => {
@@ -14,11 +15,23 @@ describe('validate', () => {
 
     assert.strictEqual(validate('90123e1c-7512-523e-bb28-76fab9f2f73d'), true);
 
+    assert.strictEqual(validate(parse('90123e1c-7512-523e-bb28-76fab9f2f73d')), true);
+    assert.strictEqual(validate(Buffer.from(parse('90123e1c-7512-523e-bb28-76fab9f2f73d'))), true);
+    assert.strictEqual(validate(Array.from(parse('90123e1c-7512-523e-bb28-76fab9f2f73d'))), true);
+
     assert.strictEqual(validate(), false);
 
     assert.strictEqual(validate(''), false);
 
     assert.strictEqual(validate('invalid uuid string'), false);
+
+    const uuidBin = Array.from(parse('90123e1c-7512-523e-bb28-76fab9f2f73d'));
+
+    assert.strictEqual(validate(uuidBin), true);
+
+    uuidBin[3] = 256;
+
+    assert.strictEqual(validate(uuidBin), false);
 
     assert.strictEqual(validate('00000000000000000000000000000000'), false);
 
