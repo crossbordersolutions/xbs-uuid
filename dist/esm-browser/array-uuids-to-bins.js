@@ -3,7 +3,7 @@ import uuidToBin from './uuid-to-bin.js';
 
 function arrayUuidsToBins(arrayWithUuids) {
   return arrayWithUuids.map(function (value) {
-    return typeof uuid === 'string' && validate(value) ? uuidToBin(value) : value;
+    return typeof value === 'string' && validate(value) ? uuidToBin(value) : value;
   });
 }
 
