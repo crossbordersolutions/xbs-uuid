@@ -63,6 +63,18 @@ Object.defineProperty(exports, "uuidToBin", {
     return _uuidToBin.default;
   }
 });
+Object.defineProperty(exports, "arrayUuidsToBins", {
+  enumerable: true,
+  get: function () {
+    return _arrayUuidsToBins.default;
+  }
+});
+Object.defineProperty(exports, "objectUuidsToBins", {
+  enumerable: true,
+  get: function () {
+    return _objectUuidsToBins.default;
+  }
+});
 Object.defineProperty(exports, "objectBinsToUuids", {
   enumerable: true,
   get: function () {
@@ -95,6 +107,10 @@ var _stringify = _interopRequireDefault(require("./stringify.js"));
 var _parse = _interopRequireDefault(require("./parse.js"));
 
 var _uuidToBin = _interopRequireDefault(require("./uuid-to-bin.js"));
+
+var _arrayUuidsToBins = _interopRequireDefault(require("./array-uuids-to-bins.js"));
+
+var _objectUuidsToBins = _interopRequireDefault(require("./object-uuids-to-bins"));
 
 var _objectBinsToUuids = _interopRequireDefault(require("./object-bins-to-uuids.js"));
 

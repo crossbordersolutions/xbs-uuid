@@ -28,6 +28,8 @@ export default [
   chunk('parse', 'uuidParse'),
   chunk('stringify', 'uuidStringify'),
   chunk('uuid-to-bin', 'uuidToBin'),
-  chunk('object-bins-to-uuids', 'objectBinsToUuids'),
+  chunk('array-uuids-to-bins', 'arrayUuidsToBins'),
+  chunk('object-uuids-to-bins', 'arrayOfObjectsBinsToUuids'),
+  chunk('object-bins-to-uuids', 'objectUuidsToBins'),
   chunk('array-of-objects-bins-to-uuids', 'arrayOfObjectsBinsToUuids'),
 ];

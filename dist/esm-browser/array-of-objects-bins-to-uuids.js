@@ -1,7 +1,7 @@
 import objectBinsToUuids from './object-bins-to-uuids';
 
-function arrayOfObjectsBinsToUuids(arrayWithBins) {
-  return arrayWithBins.map(function (objWithBins) {
+function arrayOfObjectsBinsToUuids(arrayOfObjectsWithBins) {
+  return arrayOfObjectsWithBins.map(function (objWithBins) {
     return objectBinsToUuids(objWithBins);
   });
 }
