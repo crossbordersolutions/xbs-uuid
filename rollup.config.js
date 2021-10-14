@@ -27,5 +27,7 @@ export default [
   chunk('validate', 'uuidValidate'),
   chunk('parse', 'uuidParse'),
   chunk('stringify', 'uuidStringify'),
-  chunk('xbs-utils', 'UuidUtils'),
+  chunk('uuid-to-bin', 'uuidToBin'),
+  chunk('object-bins-to-uuids', 'objectBinsToUuids'),
+  chunk('array-of-objects-bins-to-uuids', 'arrayOfObjectsBinsToUuids'),
 ];

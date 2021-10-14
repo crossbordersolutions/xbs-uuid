@@ -7,4 +7,6 @@ export { default as version } from './version.js';
 export { default as validate } from './validate.js';
 export { default as stringify } from './stringify.js';
 export { default as parse } from './parse.js';
-export { default as UuidUtils } from './xbs-utils.js';
+export { default as uuidToBin } from './uuid-to-bin.js';
+export { default as objectBinsToUuids } from './object-bins-to-uuids.js';
+export { default as arrayOfObjectsBinsToUuids } from './array-of-objects-bins-to-uuids.js';

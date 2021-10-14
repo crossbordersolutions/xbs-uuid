@@ -57,10 +57,22 @@ Object.defineProperty(exports, "parse", {
     return _parse.default;
   }
 });
-Object.defineProperty(exports, "UuidUtils", {
+Object.defineProperty(exports, "uuidToBin", {
   enumerable: true,
   get: function () {
-    return _xbsUtils.default;
+    return _uuidToBin.default;
+  }
+});
+Object.defineProperty(exports, "objectBinsToUuids", {
+  enumerable: true,
+  get: function () {
+    return _objectBinsToUuids.default;
+  }
+});
+Object.defineProperty(exports, "arrayOfObjectsBinsToUuids", {
+  enumerable: true,
+  get: function () {
+    return _arrayOfObjectsBinsToUuids.default;
   }
 });
 
@@ -82,6 +94,10 @@ var _stringify = _interopRequireDefault(require("./stringify.js"));
 
 var _parse = _interopRequireDefault(require("./parse.js"));
 
-var _xbsUtils = _interopRequireDefault(require("./xbs-utils.js"));
+var _uuidToBin = _interopRequireDefault(require("./uuid-to-bin.js"));
+
+var _objectBinsToUuids = _interopRequireDefault(require("./object-bins-to-uuids.js"));
+
+var _arrayOfObjectsBinsToUuids = _interopRequireDefault(require("./array-of-objects-bins-to-uuids.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
