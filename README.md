@@ -58,6 +58,12 @@ For timestamp UUIDs, namespace UUIDs, and other options read on ...
 | [`uuid.v5()`](#uuidv5name-namespace-buffer-offset) | Create a version 5 (namespace w/ SHA-1) UUID |  |
 | [`uuid.validate()`](#uuidvalidatestr) | Test a string to see if it is a valid UUID | New in `uuid@8.3` |
 | [`uuid.version()`](#uuidversionstr) | Detect RFC version of a UUID | New in `uuid@8.3` |
+| [`uuid.uuidToBin()`](#uuidparsestr) | Convert UUID string to a Buffer that can be used directly with our DAL | XBS |
+| [`uuid.arrayUuidsToBins()`](#uuidparsestr) | Runs uuidToBin on all valid UUID strings in an array, leaving other values unchanged | XBS |
+| [`uuid.objectUuidsToBins()`](#uuidparsestr) | Runs uuidToBin on all valid UUID strings values in an object, leaving other values unchanged | XBS |
+| [`uuid.objectBinsToUuids()`](#uuidparsestr) | Runs stringify on all valid UUID Bin values in an object, leaving other values unchanged | XBS |
+| [`uuid.arrayOfObjectsBinsToUuids()`](#uuidparsestr) | Runs objectBinsToUuids on all objects in an array | XBS |
+
 
 ## API
 
