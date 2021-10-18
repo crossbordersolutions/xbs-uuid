@@ -20,7 +20,7 @@ function objectUuidsToBins(objWithUuids) {
         key = _ref2[0],
         value = _ref2[1];
 
-    objWithUuids[key] = typeof uuid === 'string' && validate(value) ? uuidToBin(value) : value;
+    objWithBins[key] = typeof value === 'string' && validate(value) ? uuidToBin(value) : value;
   });
   return objWithBins;
 }

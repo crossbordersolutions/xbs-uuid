@@ -14,7 +14,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 function objectUuidsToBins(objWithUuids) {
   const objWithBins = {};
   Object.entries(objWithUuids).forEach(([key, value]) => {
-    objWithUuids[key] = typeof uuid === 'string' && (0, _validate.default)(value) ? (0, _uuidToBin.default)(value) : value;
+    objWithBins[key] = typeof value === 'string' && (0, _validate.default)(value) ? (0, _uuidToBin.default)(value) : value;
   });
   return objWithBins;
 }
